@@ -1,0 +1,41 @@
+<section id="inicio" class="relative flex min-h-[100svh] flex-col overflow-hidden">
+  <div class="absolute inset-0 z-0 overflow-hidden" aria-hidden="true">
+    <div
+      class="absolute inset-0 scale-[1.08] bg-cover bg-center bg-no-repeat grayscale contrast-[1.08] blur-[3px]"
+      [style.background-image]="'url(' + site.heroImageSrc + ')'"
+    ></div>
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-black/35 via-black/45 to-black/75"></div>
+  </div>
+
+  <app-site-header class="relative z-20 w-full shrink-0" />
+
+  <div class="relative z-10 flex min-h-0 flex-1 flex-col">
+    <div
+      class="flex flex-1 flex-col items-center justify-center px-4 pb-16 pt-2 text-center sm:px-6 sm:pt-4 lg:px-8 lg:pb-24"
+    >
+      <h1 class="font-display leading-[1.02] tracking-[0.02em]">
+        <span
+          class="block text-6xl text-white sm:text-6xl md:text-7xl lg:text-8xl xl:text-[5.25rem]"
+          >{{ site.heroTitleLine1 | uppercase }}</span
+        >
+        <span
+          class="mt-2 block text-4xl text-[#ffb800] sm:text-5xl md:text-5xl lg:text-6xl xl:text-[3.35rem]"
+          >{{ site.heroTitleLine2 | uppercase }}</span
+        >
+      </h1>
+
+      <p
+        class="mt-8 max-w-xl text-sm font-medium leading-relaxed text-white/85 sm:text-base md:max-w-2xl"
+      >
+        {{ site.tagline }}
+      </p>
+
+      <a
+        class="mt-12 inline-flex min-w-[260px] items-center justify-center border border-[#ffb800] bg-transparent px-10 py-3.5 text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-white transition hover:bg-[#ffb800]/12 sm:mt-14"
+        href="#contato"
+        >Entre em contato</a
+      >
+    </div>
+  </div>
+</section>

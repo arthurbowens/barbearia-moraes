@@ -1,0 +1,13 @@
+<section id="numeros" class="border-t border-white/10 bg-black py-16 sm:py-20">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <p class="text-center text-xs font-bold uppercase tracking-[0.2em] text-[#ffb800]">Em números</p>
+    <div class="mt-10 grid grid-cols-2 gap-8 sm:grid-cols-4">
+      @for (s of stats; track s.label) {
+        <div class="text-center">
+          <p class="font-display text-4xl tracking-tight text-white sm:text-5xl">{{ s.value }}</p>
+          <p class="mt-2 text-sm uppercase tracking-wider text-neutral-400">{{ s.label }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
